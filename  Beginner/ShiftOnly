@@ -1,0 +1,11 @@
+n = int(input())
+x = list(map(int,input().split()))
+
+count = 0
+
+
+while all(a % 2 == 0 for a in x):
+    x = [a // 2 for a in x]
+    count += 1
+    
+print(count)
